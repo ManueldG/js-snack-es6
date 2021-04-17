@@ -125,8 +125,9 @@ var newObj=[];
     function subStringMap(arr,a,b){
          
         return arr.map((val,i)=>{
-            tmp = (i>=a&&i<=b)? val.i : 0;
-            return  tmp;
+            if (i>=a&&i<=b)
+            return val.i ;
+            
             });
             
         
