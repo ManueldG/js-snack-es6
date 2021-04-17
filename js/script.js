@@ -92,8 +92,44 @@ var newObj=[];
     
     console.log('filter',subStringFilter(lista,min,max));
 
-    var map = subStringMap(lista,min,max); 
-    console.log('map',map);
+/*
+    jsnack 4
+*/
+
+ var abiti = [
+     {
+        modello: 'giuditta',
+        tipologia: 'cappotto',
+        colore: 'rosso',
+        // da inserire costo 
+ },
+ {
+    modello: 'tigre',
+    tipologia: 'body',
+    colore: 'giallo',
+    // da inserire costo 
+},
+{
+    modello: 'modigliani',
+    tipologia: 'collo alto',
+    colore: 'giallo',
+    // da inserire costo 
+},
+{
+    modello: 'turtle',
+    tipologia: 'casacca',
+    colore: 'arancione',
+    // da inserire costo 
+},
+
+];
+
+console.log('map2',abiti.map((val,k,arr)=>{
+    val.prezzo= rnd(10,50);
+    return val;
+}
+
+));
   
     
   
@@ -121,18 +157,7 @@ var newObj=[];
            
        }
 
-    //funzione con map
-    function subStringMap(arr,a,b){
-         
-        return arr.map((val,i)=>{
-            tmp = (i>=a&&i<=b)? val.i : 0;
-            return  tmp;
-            });
-            
-        
-           
-       }
-
+   
       /* var numbers = [65, 44, 12, 4];
 var newarray = numbers.map(myFunction)
 
