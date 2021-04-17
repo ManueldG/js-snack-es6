@@ -157,18 +157,6 @@ console.log('map2',abiti.map((val,k,arr)=>{
            
        }
 
-    //funzione con map
-    function subStringMap(arr,a,b){
-         
-        return arr.map((val,i)=>{
-            if (i>=a&&i<=b)
-            return val.i ;
-            
-            });
-            
-        
-           
-       }
 
       /* var numbers = [65, 44, 12, 4];
 var newarray = numbers.map(myFunction)
